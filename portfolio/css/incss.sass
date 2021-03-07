@@ -1,0 +1,415 @@
+//VARIEBLES
+$f: #fff
+
+=img
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+=flex
+    display: flex
+    justify-content: center
+    align-items: center
+=size
+    width: 100%
+    height: 100% 
+=abs   
+    position: absolute
+=rel
+  position: relative
+
+// All SITE PROPERIES
+html
+    margin: 0
+    padding: 0
+body
+    overflow-x: hidden
+    overflow-y: scroll
+    margin: 0
+    padding: 0
+
+ul 
+    list-style: none
+button:active
+button:focus
+
+    outline: none
+
+button::-moz-focus-inner
+
+    border: 0
+
+ul,
+li
+
+    margin: 0
+    padding: 0
+
+div,
+span,
+input,
+a,
+p,
+button
+            box-sizing: border-box
+
+section
+    margin: 0
+    padding: 0
+h1
+    margin: 0
+p
+    margin: 0
+a:-webkit-any-link
+
+    color: inherit
+
+a:focus outline:none
+a outline:none
+* outline:none
+a
+    outline: none !important
+    text-decoration: none
+.site__wrapper
+  width: 1280px
+  margin: 0 auto
+  +rel
+.preloader
+  z-index: 10
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  top: 0
+  left: 0
+  +flex
+.opacity
+  transition: 1s
+  opacity: 0
+.cssload-loader
+  display: block
+  margin: 0 auto
+  width: 124px
+  height: 124px
+  position: relative
+  border: 17px solid rgb(1, 1, 1)
+  animation: cssload-loader 1.7s infinite ease
+  -o-animation: cssload-loader 1.7s infinite ease
+  -ms-animation: cssload-loader 1.7s infinite ease
+  -webkit-animation: cssload-loader 1.7s infinite ease
+  -moz-animation: cssload-loader 1.7s infinite ease
+
+.cssload-loader-inner
+  vertical-align: top
+  display: inline-block
+  width: 100%
+  background-color: rgb(1, 1, 1)
+  animation: cssload-loader-inner 1.7s infinite ease-in
+  -o-animation: cssload-loader-inner 1.7s infinite ease-in
+  -ms-animation: cssload-loader-inner 1.7s infinite ease-in
+  -webkit-animation: cssload-loader-inner 1.7s infinite ease-in
+  -moz-animation: cssload-loader-inner 1.7s infinite ease-in
+
+@keyframes cssload-loader
+  0%
+    transform: rotate(0deg)
+
+  25%
+    transform: rotate(180deg)
+
+  50%
+    transform: rotate(180deg)
+
+  75%
+    transform: rotate(360deg)
+
+  100%
+    transform: rotate(360deg)
+
+
+@-o-keyframes cssload-loader
+  0%
+    transform: rotate(0deg)
+
+  25%
+    transform: rotate(180deg)
+
+  50%
+    transform: rotate(180deg)
+
+  75%
+    transform: rotate(360deg)
+
+  100%
+    transform: rotate(360deg)
+
+
+@-ms-keyframes cssload-loader
+  0%
+    transform: rotate(0deg)
+
+  25%
+    transform: rotate(180deg)
+
+  50%
+    transform: rotate(180deg)
+
+  75%
+    transform: rotate(360deg)
+
+  100%
+    transform: rotate(360deg)
+
+
+@-webkit-keyframes cssload-loader
+  0%
+    transform: rotate(0deg)
+
+  25%
+    transform: rotate(180deg)
+
+  50%
+    transform: rotate(180deg)
+
+  75%
+    transform: rotate(360deg)
+
+  100%
+    transform: rotate(360deg)
+
+
+@-moz-keyframes cssload-loader
+  0%
+    transform: rotate(0deg)
+
+  25%
+    transform: rotate(180deg)
+
+  50%
+    transform: rotate(180deg)
+
+  75%
+    transform: rotate(360deg)
+
+  100%
+    transform: rotate(360deg)
+
+
+@keyframes cssload-loader-inner
+  0%
+    height: 0%
+
+  25%
+    height: 0%
+
+  50%
+    height: 100%
+
+  75%
+    height: 100%
+
+  100%
+    height: 0%
+
+
+@-o-keyframes cssload-loader-inner
+  0%
+    height: 0%
+
+  25%
+    height: 0%
+
+  50%
+    height: 100%
+
+  75%
+    height: 100%
+
+  100%
+    height: 0%
+
+
+@-ms-keyframes cssload-loader-inner
+  0%
+    height: 0%
+
+  25%
+    height: 0%
+
+  50%
+    height: 100%
+
+  75%
+    height: 100%
+
+  100%
+    height: 0%
+
+
+@-webkit-keyframes cssload-loader-inner
+  0%
+    height: 0%
+
+  25%
+    height: 0%
+
+  50%
+    height: 100%
+
+  75%
+    height: 100%
+
+  100%
+    height: 0%
+
+
+@-moz-keyframes cssload-loader-inner
+  0%
+    height: 0%
+
+  25%
+    height: 0%
+
+  50%
+    height: 100%
+
+  75%
+    height: 100%
+
+  100%
+    height: 0%
+.portfolio
+  width: 100%
+  height: 100vh
+  +rel
+  
+#demotext 
+  text-align: center
+  +abs
+  top: 0%
+  left: 50%
+  transform: translate(-50%,0)
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 50px
+  // text-shadow: -4px 2px 6px #fff
+  font-size: 80px
+  height: 200px
+
+.first__wrapper
+  width: 1200px
+  height: 500px
+  +rel
+  top: 100px
+  left: 50%
+  display: flex
+  flex-flow: row nowrap
+  transform: translate(-50%, 0)
+.first__row
+  width: 100%
+  height: 100%
+  background-size: 100%
+  background-position: 50% 0%
+  transition: 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+.first__row:hover
+  background-position: 50% 100%
+.first__row:nth-child(-n+2)
+
+.first__row:nth-child(1)
+  background-image: url(../../img/israel.jpg)
+.first__row:nth-child(2)
+  background-image: url(../../img/first__portfolio.jpg)
+.first__row:nth-child(3)
+  background-image: url(../../img/studio__site.jpg)
+
+.second__wrapper
+  width: 1200px
+  height: 500px
+  +rel
+  top: 100px
+  left: 50%
+  display: flex
+  flex-flow: row nowrap
+  transform: translate(-50%, 0)
+.second__row
+  width: 400px
+  height: 100%
+  background-size: 100%
+  background-position: 50% 0%
+  transition: 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+.second__row:hover
+  background-position: 50% 100%
+.second__row:nth-child(1)
+  background-image: url(../../img/mafia__site.jpg)
+.second__row:nth-child(2)
+  background-image: url(../../img/barter__site.jpg)
+.second__row:nth-child(3)
+  background-image: url(../../img/sixPSD.jpg)
+.black__row
+  width: 100%
+  height: 100%
+  background: rgba(1,1,1,0.7)
+  +flex
+  flex-flow: column
+  p
+    font-family: Arial;
+    color: hsla(0,0%,100%,1);
+    font-size: 1.2rem
+    line-height: 1.5em
+    letter-spacing: .5px
+    text-align: center
+.black__row:hover .red__btn
+  opacity: 1
+  transform: translate(0, 100%)
+  transition: .35s ease-out
+.red__btn
+  width: 200px
+  height: 50px
+  opacity: 0
+  background: red
+  +flex 
+  font-size: 16px
+  transform: translate(0, 240%)
+  font-family: Arial
+  font-weight: 700
+  color: $f
+.canvas
+  +abs
+  top: 0 
+  margin: 0 auto
+  height: calc(113vh + 600px)
+//codepen
+.codepen
+  width: 1200px
+  margin: 0 auto
+  h1
+    text-align: center
+    +rel
+    top: 80px
+    font-size:
+    color: #111
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 50px
+    font-size: 80px
+    height: 200px
+.codepen__wrapper
+    height: 400px
+    display: flex
+    flex-flow: row nowrap
+    +rel
+    background: #111
+    transform: translate(0, 0px)
+.cd1
+  width: 400px
+  height: 200px
+.more__btn
+  width: 250px
+  height: 50px
+  background: #111
+  +rel
+  left: 50%
+  transform: translate(-50%, 20px)
+  +flex
+  color: #fff
+  font-size: 20px
+  font-family: Arial Narrow, sans-serif

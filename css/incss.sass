@@ -1,0 +1,235 @@
+//VARIEBLES
+$f: #fff
+
+=img
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+=flex
+    display: flex
+    justify-content: center
+    align-items: center
+=size
+    width: 100%
+    height: 100% 
+=abs   
+    position: absolute
+
+// All SITE PROPERIES
+html
+    margin: 0
+    padding: 0
+body
+    overflow-x: hidden
+    overflow-y: scroll
+    margin: 0
+    padding: 0
+
+ul 
+    list-style: none
+button:active
+button:focus
+
+    outline: none
+
+button::-moz-focus-inner
+
+    border: 0
+
+ul,
+li
+
+    margin: 0
+    padding: 0
+
+div,
+span,
+input,
+a,
+p,
+button
+            box-sizing: border-box
+
+section
+    margin: 0
+    padding: 0
+h1
+    margin: 0
+p
+    margin: 0
+a:-webkit-any-link
+
+    color: inherit
+
+a:focus outline:none
+a outline:none
+* outline:none
+a
+    outline: none !important
+    text-decoration: none
+/////////////////////
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  +abs
+.all_wrapper
+  +flex
+  display: none
+  perspective: 1000px
+  transform: rotateX(90deg)
+.block__center
+  width: 800px
+  height: 500px
+  font-family: 'PT Mono', monospace;
+  +abs
+
+  h1
+   font-size: 45px
+   text-align: center
+   +abs
+   left: 50%
+   transform: translate(-50%, -100%)
+.h1__whiteb
+  background: #fff
+  width: 0px
+  height: 50px
+  position: relative
+  z-index: 9
+  top: 50%
+  transform: translate(-50%, -50%)
+  left: 50%
+  +flex
+  p
+   font-size: 26px 
+   z-index: 10
+   opacity: 0
+.svg__pos
+  +abs
+  top: 0
+  left: 0
+.st1
+  transition: 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+  transform-origin: 50% 50% 
+  transform: scale(0)
+.st1:hover
+  opacity: .8
+.l5:hover
+  opacity: 1
+//#654DBF
+.l5
+  perspective: 1000px
+  transform: rotateX(90deg)
+  transform-origin: 50% 50% 
+.l1:hover, .l2:hover, .l3:hover, .l4:hover, .l6:hover, .l7:hover, .l8:hover
+  stroke: #fff
+  stroke-width: 3
+.l1
+  opacity: .99
+.l2
+  opacity: .98
+.l3
+  opacity: .97
+.l4
+  opacity: .96
+.l5
+  fill: #585894
+.l6
+  opacity: .95
+.l7
+  opacity: .94
+.l8
+  opacity: .93
+.wblock__wrapper
+  +abs
+  width: 400px
+  height: 50px
+  top: 0
+  z-index: 10
+  top: calc(50% + 55px)
+  transform: translate(-50%, -50%)
+  left: 50%
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+
+.white__block1, .white__block2, .white__block3
+  background: #fff
+  width: 0px
+  height: 50px
+  font-size: 17px
+  color: #2CA4BF
+  text-decoration: underline
+  cursor: pointer
+.a__block
+  display: block
+  width: 100%
+  height: 100%
+  +flex
+  opacity: 0
+// Contacts__wrapper
+.contacts__wrapper
+  +abs
+  top: 0 
+  left: 0
+  width: 100%
+  height: 100vh
+  transition: 2s
+  opacity: 0
+  background: rgba(1,1,1,0.8)
+  z-index: 10
+  +flex
+.exit
+  +abs
+  top: 5%
+  right: 5%
+  color: #fff
+  font-size: 60px
+  cursor: pointer
+.exit:hover
+  color: red
+.logo__wrapper
+  width: 650px
+  height: 200px
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
+  z-index: 11
+.logo
+  width:  150px
+  height: 150px
+  background-size: 100%
+.logo:nth-child(1)
+  background-image: url(../../img/telega.png)
+  margin-right: 20px
+.logo:nth-child(2)
+  width: 300px
+  height: 50px
+  background: #fff
+  font-family: DejaVu Sans Mono, monospace
+  font-weight: 200
+  letter-spacing: 1.1px
+  +flex
+.logo:nth-child(3)
+  background-image: url(../../img/vk.png)
+  margin-left: 20px
+.opacity
+  transition: 1s
+  opacity: 1
+.opacityT
+  transition: 1s
+  opacity: 1
+//Portfolio
+.portfolio
+  width: 100vh
+  left: 1000px
+  top: 0
+  height: 100vh
+  background: #ccc
+  h1
+    font-family: 'PT Mono', monospace;
+    font-size: 45px
+    text-align: center
